@@ -5,6 +5,9 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'cloudinary'
+gem 'carrierwave'
+gem 'figaro'
 gem 'jquery-rails'
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass', '~> 3.3'

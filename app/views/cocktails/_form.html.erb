@@ -9,6 +9,8 @@
       </ul>
     </div>
   <% end %>
+  <%= f.input :photo, value: 'test' %>
+  <%= f.input :photo_cache, as: :hidden %>
   <%= f.input :name %>
   <%= f.button :submit %>
 <% end %>

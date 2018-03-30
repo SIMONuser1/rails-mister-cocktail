@@ -9,7 +9,9 @@
       <th colspan="3"></th>
     </tr>
   </thead>
-
+  <!-- app/views/articles/index.html.erb -->
+  <%= cl_image_tag("vletajiewxzljjyykpvl",
+        width: 400, height: 300, crop: :fill) %>
   <tbody>
     <% @cocktails.each do |cocktail| %>
       <tr>
