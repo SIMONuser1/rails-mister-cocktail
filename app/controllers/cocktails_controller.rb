@@ -41,10 +41,8 @@ class CocktailsController < ApplicationController
     respond_to do |format|
       if @cocktail.update(cocktail_params)
         format.html { redirect_to @cocktail, notice: 'Cocktail was successfully updated.' }
-        format.json { render :show, status: :ok, location: @cocktail }
       else
         format.html { render :edit }
-        format.json { render json: @cocktail.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -55,7 +53,6 @@ class CocktailsController < ApplicationController
     @cocktail.destroy
     respond_to do |format|
       format.html { redirect_to cocktails_url, notice: 'Cocktail was successfully destroyed.' }
-      format.json { head :no_content }
     end
   end
 

@@ -3,3 +3,32 @@
 // @import "dashboard";
 // @import "profile";
 // @import "map";
+body {
+  background-color: white;
+//   background-image: asset-url("background2.jpg");
+//   background-size: cover;
+//   background-position: center;
+//   height: 100vh;
+//   width: 100vw;
+}
+
+.flexy-sexy-container {
+  display: flex;
+}
+
+.cocktails {
+  flex: 0 0 80%;
+}
+
+.cocktails-menu {
+  flex: 0 0 20%;
+  position: sticky !important;
+  top: 25vh !important; /* !important to override Gmaps inline CSS */
+  height: 50vh;
+}
+
+li {
+  list-style-type: none;
+  padding-bottom: 30px;
+
+}

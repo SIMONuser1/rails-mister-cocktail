@@ -1,0 +1,26 @@
+.card {
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  border-radius: 20px;
+  margin-bottom: 2em;
+    .card-description {
+      opacity: 0;
+      position: relative;
+      border-radius: 20px;
+      height: 100%;
+      width: 100%;
+        &:hover {
+          opacity: 1;
+          transition: 1s;
+          box-shadow: 2px 2px 2px #ebebeb;
+        }
+        .content {
+          position: absolute;
+          bottom: 20px;
+          left: 30px;
+        }
+    }
+}
+
